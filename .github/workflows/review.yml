@@ -20,10 +20,10 @@ jobs:
           node-version: 20.10.0
 
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       - name: Coverage Test
-        run: yarn cy:test:unit
+        run: npm run test:unit
 
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
